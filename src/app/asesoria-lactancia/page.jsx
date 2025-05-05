@@ -404,7 +404,7 @@ export default function AsesoriaLactanciaPage() {
             
             <div className="w-full lg:w-1/3 mt-12 lg:mt-0">
               <Image 
-                src="/images/madre-bebe.jpg" 
+                src="/images/enfern.png" 
                 alt="Madre con bebé" 
                 width={500} 
                 height={600}

@@ -14,11 +14,48 @@
   html {
     scroll-behavior: smooth;
   }
-  
   body {
     background: var(--background);
     color: var(--foreground);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
+    background-image: url('/images/tu-imagen-de-fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Para que el fondo se mantenga fijo al hacer scroll */
+  }
+  
+  /* Aplicar Montserrat a todos los elementos de texto */
+  h1, h2, h3, h4, h5, h6, p, span, div, a, button, input, textarea, select, li {
+    font-family: 'Montserrat', sans-serif !important;
+  }
+  
+  /* Específicamente para los títulos grandes como "Asesoría en Anticoncepción" */
+  h1, .heading-large {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+  
+  /* Para subtítulos */
+  h2, h3, h4, .heading-medium {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.01em;
+  }
+  
+  /* Para textos de párrafo */
+  p, .text-body {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0;
+  }
+  
+  /* Para garantizar que los botones tengan la misma fuente */
+  button, .button {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 500;
   }
 }
 
@@ -88,7 +125,6 @@
 .typed-cursor {
   color: var(--secondary);
 }
-/* En src/app/globals.css */
 
 /* Estilos para contenido de blog */
 .blog-content h2 {
@@ -97,6 +133,7 @@
   margin-top: 2rem;
   margin-bottom: 1rem;
   color: #333;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 .blog-content h3 {
@@ -105,11 +142,14 @@
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
   color: #444;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 .blog-content p {
   margin-bottom: 1.25rem;
   line-height: 1.7;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 400;
 }
 
 .blog-content img {
@@ -123,10 +163,12 @@
 .blog-content ol {
   margin-left: 1.5rem;
   margin-bottom: 1.5rem;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 .blog-content li {
   margin-bottom: 0.5rem;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 .blog-content blockquote {
@@ -136,13 +178,54 @@
   margin-right: 0;
   font-style: italic;
   color: #555;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 .blog-content a {
   color: #00927c;
   text-decoration: underline;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 .blog-content a:hover {
   color: #007c69;
+}
+
+/* Estilos específicos para los botones y secciones de título */
+.hero-title, .section-title {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700 !important;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.hero-subtitle, .section-subtitle {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Estilos para asegurar que los botones tengan la fuente correcta */
+.btn, button, a.button {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 500;
+}
+
+/* Regla que asegura aplicación consistente en elementos anidados profundamente */
+* {
+  font-family: 'Montserrat', sans-serif !important;
+}
+/* En tu archivo globals.css o un archivo CSS específico */
+.modality-card a:hover,
+button:hover,
+.cta-button:hover {
+  background-color: #00927c !important;
+  color: white !important;
+  transition: all 0.3s ease;
+}
+
+[style*="background-color: #e1ccad"]:hover,
+.bg-\[#e1ccad\]:hover {
+  background-color: #00927c !important;
+  color: white !important;
 }

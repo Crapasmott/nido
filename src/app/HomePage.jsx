@@ -27,7 +27,7 @@ export default function HomePage() {
         
         // Inicializar la animación de texto
         const typed = new Typed(typedTextRef.current, {
-          strings: ['Bebé', 'Embarazo', 'Parto', 'Postparto', 'Lactancia'],
+          strings: ['el Bebé', 'Embarazo', 'Parto', 'Postparto', 'Lactancia'],
           typeSpeed: 60,
           backSpeed: 40,
           backDelay: 1500,
@@ -67,7 +67,7 @@ export default function HomePage() {
             {/* Contenido lado izquierdo */}
             <div className="md:w-1/2 text-white mb-8 md:mb-0">
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                Cuidamos del Bienestar del<br />
+                Cuidamos del Bienestar en<br />
                 <span className="text-[#e1ccad]">
                   <span ref={typedTextRef}>Bebé</span>
                 </span>

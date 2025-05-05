@@ -117,11 +117,7 @@ export default function AnticoncepcionPage() {
               Asesoría en Anticoncepción
             </h1>
             <p className="text-lg md:text-xl text-white leading-relaxed">
-              La maternidad es un viaje único y transformador. Cada mujer merece orientación 
-              profesional para tomar decisiones informadas sobre su salud reproductiva. 
-              Entendemos los cambios físicos y hormonales durante la lactancia, y por eso 
-              ofrecemos una asesoría anticonceptiva especializada que honra tu proceso de 
-              maternidad mientras protege tanto tu bienestar como el de tu bebé.
+            Cuidamos tu fertilidad mientras nutres a tu bebé: asesoría anticonceptiva especializada para madres lactantes.  Cada mujer merece orientación profesional para tomar decisiones informadas sobre su salud reproductiva.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <Link href="#contacto" className="cta-button">
@@ -385,7 +381,7 @@ export default function AnticoncepcionPage() {
             
             <div className="w-full lg:w-1/3 mt-12 lg:mt-0">
               <Image 
-                src="/images/madre-bebe.jpg" 
+                src="/images/doc-anti.png" 
                 alt="Madre con bebé" 
                 width={500} 
                 height={600}

@@ -54,10 +54,10 @@ export default function NosotrosPage() {
         {
             title: 'Servicios',
             links: [
-                { text: 'Curso prenatal', url: '/servicios#curso-prenatal' },
-                { text: 'Cuidados postparto', url: '/servicios#cuidados-postparto' },
-                { text: 'Asesoría en lactancia', url: '/servicios#asesoria-lactancia' },
-                { text: 'Asesoría en anticoncepción', url: '/servicios#anticoncepcion' }
+                { text: 'Curso prenatal', url: '/prenatal' },
+                { text: 'Cuidados postparto', url: '/cuidados-postparto' },
+                { text: 'Asesoría en lactancia', url: '/asesoria-lactancia' },
+                { text: 'Asesoría en anticoncepción', url: '/anticoncepcion' }
             ]
         },
         {
@@ -65,7 +65,7 @@ export default function NosotrosPage() {
             links: [
                 { text: 'Nosotros', url: '/nosotros' },
                 { text: 'Blog', url: '/blog' },
-                { text: 'Testimonios', url: '/testimonios' },
+                { text: 'Testimonios', url: '/#testimonios' },
                 { text: 'Profesionales', url: '/equipo' }
             ]
         },
@@ -75,7 +75,7 @@ export default function NosotrosPage() {
                 { text: 'Reservar cita', url: '/contacto#reservar' },
                 { text: 'Preguntas frecuentes', url: '/faq' },
                 { text: 'Ubicación', url: '/contacto#ubicacion' },
-                { text: 'Teléfono: (01) 234-5678', url: 'tel:+5101234567' }
+                { text: 'Teléfono: +573332358135', url: 'tel:+573332358135' }
             ]
         }
     ];
@@ -130,13 +130,13 @@ export default function NosotrosPage() {
                         travesía.
                     </p>
                     <div className="mt-8 flex space-x-4 animate-bounce-slow">
-                    <Link href="/inicio" className="px-6 py-3 bg-[#00927c] hover:bg-[#007c69] rounded-full transition-colors duration-300 transform hover:scale-105">
-  Inicio
-</Link>
-<Link href="/#servicios" className="px-6 py-3 bg-[#00927c] hover:bg-[#007c69] rounded-full transition-colors duration-300 transform hover:scale-105">
-Servicios
-</Link>
-                       
+                        <Link href="/inicio" className="px-6 py-3 bg-[#00927c] hover:bg-[#007c69] rounded-full transition-colors duration-300 transform hover:scale-105">
+                            Inicio
+                        </Link>
+                        <Link href="/#servicios" className="px-6 py-3 bg-[#00927c] hover:bg-[#007c69] rounded-full transition-colors duration-300 transform hover:scale-105">
+                            Servicios
+                        </Link>
+
                     </div>
                 </div>
             </div>

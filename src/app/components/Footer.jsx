@@ -48,10 +48,10 @@ export default function Footer() {
     {
       title: 'Servicios',
       links: [
-        { text: 'Curso prenatal', url: 'prenatal' },
-        { text: 'Cuidados postparto', url: 'cuidados-postparto' },
-        { text: 'Asesoría en lactancia', url: 'asesoria-lactancia' },
-        { text: 'Asesoría en anticoncepción', url: 'anticoncepcion' }
+        { text: 'Curso prenatal', url: '/prenatal' },
+        { text: 'Cuidados postparto', url: '/cuidados-postparto' },
+        { text: 'Asesoría en lactancia', url: '/asesoria-lactancia' },
+        { text: 'Asesoría en anticoncepción', url: '/anticoncepcion' }
       ]
     },
     {
@@ -59,7 +59,7 @@ export default function Footer() {
       links: [
         { text: 'Nosotros', url: '/nosotros' },
         { text: 'Blog', url: '/blog' },
-        { text: 'Testimonios', url: '/testimonios' },
+        { text: 'Testimonios', url: '/Testimonials' },
         { text: 'Profesionales', url: '/#nosotros' }
       ]
     },
@@ -69,7 +69,7 @@ export default function Footer() {
         { text: 'Reservar cita', url: '/contacto#reservar' },
         { text: 'Preguntas frecuentes', url: '/faq' },
         { text: 'Ubicación', url: '/contacto#ubicacion' },
-        { text: 'Teléfono: 333 2358135', url: 'tel:+51333 2358135' }
+        { text: 'Teléfono: 3332358135', url: 'tel:+573332358135' }
       ]
     }
   ];

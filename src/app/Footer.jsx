@@ -59,7 +59,7 @@ export default function Footer() {
       links: [
         { text: 'Nosotros', url: '/nosotros' },
         { text: 'Blog', url: '/blog' },
-        { text: 'Testimonios', url: '/testimonios' },
+        { text: 'Testimonios', url: '/#testimonials' },
         { text: 'Profesionales', url: '/#nosotros' }
       ]
     },
@@ -69,7 +69,7 @@ export default function Footer() {
         { text: 'Reservar cita', url: '/contacto#reservar' },
         { text: 'Preguntas frecuentes', url: '/faq' },
         { text: 'Ubicación', url: '/contacto#ubicacion' },
-        { text: 'Teléfono: (01) 234-5678', url: 'tel:+5101234567' }
+        { text: 'Teléfono: +573332358135', url: 'tel:+573332358135' }
       ]
     }
   ];

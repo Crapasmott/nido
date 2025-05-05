@@ -475,7 +475,7 @@ export default function PrenatalPage() {
               <div className="md:col-span-5">
                 <div className="relative h-full flex items-center justify-center">
                   <Image
-                    src="/images/subscribe_image.png"
+                    src="/images/enfern.png"
                     alt="Suscripción"
                     width={400}
                     height={400}

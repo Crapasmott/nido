@@ -44,16 +44,6 @@ export default function Servicios() {
     }
   };
 
-  // Variantes para la animación del botón (cambio de color)
-  const buttonVariants = {
-    hover: {
-      backgroundColor: "#00927c",
-      transition: {
-        duration: 0.3
-      }
-    }
-  };
-
   return (
     <section id="servicios" className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -74,15 +64,15 @@ export default function Servicios() {
           {servicios.map((servicio) => (
             <motion.div 
               key={servicio.id} 
-              className="flex flex-col items-center"
+              className="flex flex-col"
               whileHover="hover"
               variants={cardVariants}
             >
-              {/* Contenedor para la imagen ovalada exactamente como en la imagen 1 */}
+              {/* Imagen con bordes redondeados */}
               <div className="mb-4" style={{ 
-                width: '255px', 
-                height: '357px', 
-                borderRadius: '0%', 
+                width: '100%', 
+                height: '280px', 
+                borderRadius: '28px', 
                 overflow: 'hidden'
               }}>
                 <img 
@@ -92,19 +82,21 @@ export default function Servicios() {
                 />
               </div>
               
-              <h3 className="text-xl font-bold text-gray-800 mb-3 text-center">{servicio.titulo}</h3>
-              <p className="text-gray-600 text-center mb-5 text-sm">{servicio.descripcion}</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">{servicio.titulo}</h3>
+              <p className="text-gray-600 mb-5 text-sm">{servicio.descripcion}</p>
               
-              {/* Botón con flecha exactamente como en la imagen 1 */}
+              {/* Botón con flecha y esquinas específicamente redondeadas */}
               <a href={servicio.enlace} className="inline-block">
-                <motion.div 
-                  className="w-12 h-12 rounded-md flex items-center justify-center mx-auto"
-                  style={{ backgroundColor: '#e1ccad' }}
-                  whileHover="hover"
-                  variants={buttonVariants}
+                <div 
+                  className="w-12 h-12 bg-[#e1ccad] flex items-center justify-center"
+                  style={{ 
+                    borderRadius: '18px 0 18px 0' 
+                  }}
                 >
-                  <span className="text-gray-800">→</span>
-                </motion.div>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </div>
               </a>
             </motion.div>
           ))}

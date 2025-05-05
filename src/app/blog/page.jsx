@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getAllPosts, getAllCategories } from './wordpress-utils';
-import Footer from '../components/Footer'; // Asegúrate de que esta ruta sea correcta
+import Footer from '../components/Footer';
 
 export default function BlogPage() {
   const [posts, setPosts] = useState([]);
@@ -123,11 +123,15 @@ export default function BlogPage() {
 
   return (
     <div className="w-full">
-      {/* Hero Banner */}
-      <div className="relative w-full h-[300px] bg-gray-800">
+      {/* Hero Banner con imagen de fondo */}
+      <div 
+        className="relative w-full h-[300px] bg-cover bg-center" 
+        style={{ backgroundImage: 'url("/images/encantador-nido-campo-flores_1123896-49502.jpg")' }}
+      >
+        {/* Se ha quitado el overlay negro */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Nuestro Blog</h1>
-          <p className="max-w-2xl text-lg">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-shadow-lg">Nuestro Blog</h1>
+          <p className="max-w-2xl text-lg text-shadow-md">
             Explorando la maternidad consciente: información, consejos y experiencias para tu camino maternal
           </p>
         </div>
@@ -178,7 +182,7 @@ export default function BlogPage() {
                 key={post.id}
                 className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow"
               >
-                <Link href={`/blog/${post.slug}`}>
+                <Link href={`/blog/post?slug=${post.slug}`}>
                   <div className="relative h-56 w-full">
                     <Image
                       src={getFeaturedImageUrl(post)}
