@@ -39,9 +39,8 @@ export default function Footer() {
 
   const socialLinks = [
     { icon: 'facebook', url: 'https://facebook.com' },
-    { icon: 'instagram', url: 'https://instagram.com' },
-    { icon: 'twitter', url: 'https://twitter.com' },
-    { icon: 'youtube', url: 'https://youtube.com' }
+    { icon: 'instagram', url: 'https://www.instagram.com/nido_de_cuidados?igsh=YndjenJ0cHMwMDBj' }
+   
   ];
 
   const footerLinks = [
@@ -69,7 +68,7 @@ export default function Footer() {
         { text: 'Reservar cita', url: '/contacto#reservar' },
         { text: 'Preguntas frecuentes', url: '/faq' },
         { text: 'Ubicación', url: '/contacto#ubicacion' },
-        { text: 'Teléfono: +573332358135', url: 'tel:+573332358135' }
+        { text: 'Teléfono: 573332358135', url: 'tel:+573332358135' }
       ]
     }
   ];

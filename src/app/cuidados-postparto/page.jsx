@@ -4,7 +4,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion, useAnimation, useInView } from 'framer-motion';
-import Footer from '../components/Footer';
+import Footer from '../Footer';
 import './postparto.css';
 
 export default function CuidadosPostpartoPage() {

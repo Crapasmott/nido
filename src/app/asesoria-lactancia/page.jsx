@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion, useAnimation, useInView } from 'framer-motion';
-import Footer from '../components/Footer';
+import Footer from '../Footer';
 import './lactancia.css';
 
 export default function AsesoriaLactanciaPage() {

@@ -1,8 +1,7 @@
-// src/components/layout/Footer.tsx
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -26,9 +25,16 @@ const Footer = () => {
               experiencia de manera única y especial.
             </p>
             <div className="flex space-x-4">
-              <SocialIcon Icon={FaFacebookF} href="#" />
-              <SocialIcon Icon={FaTwitter} href="#" />
-              <SocialIcon Icon={FaLinkedinIn} href="#" />
+              <SocialIcon 
+                Icon={FaFacebookF} 
+                href="https://www.facebook.com/share/1FqUG9E1RW/" 
+                ariaLabel="Facebook"
+              />
+              <SocialIcon 
+                Icon={FaInstagram} 
+                href="https://www.instagram.com/nido_de_cuidados?igsh=YndjenJ0cHMwMDBj" 
+                ariaLabel="Instagram"
+              />
             </div>
           </div>
 
@@ -67,7 +73,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Copyright */}
       <div className="bg-primary-dark py-4 bg-opacity-20">
         <div className="container mx-auto px-4 text-center">
@@ -81,13 +87,14 @@ const Footer = () => {
 };
 
 // Componente para iconos sociales
-const SocialIcon = ({ Icon, href }: { Icon: React.ElementType, href: string }) => {
+const SocialIcon = ({ Icon, href, ariaLabel }) => {
   return (
     <a 
       href={href}
       className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
       target="_blank"
       rel="noopener noreferrer"
+      aria-label={ariaLabel}
     >
       <Icon className="text-white" />
     </a>
@@ -95,7 +102,7 @@ const SocialIcon = ({ Icon, href }: { Icon: React.ElementType, href: string }) =
 };
 
 // Componente para enlaces del footer
-const FooterLink = ({ href, label }: { href: string, label: string }) => {
+const FooterLink = ({ href, label }) => {
   return (
     <li>
       <Link href={href} className="text-white/90 hover:text-white transition-colors">

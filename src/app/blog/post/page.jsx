@@ -4,7 +4,7 @@ import { useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getPostBySlug } from '../wordpress-utils';
-import Footer from '../../components/Footer';
+import Footer from '../../Footer';
 
 export default function BlogPostPage() {
   const searchParams = useSearchParams();

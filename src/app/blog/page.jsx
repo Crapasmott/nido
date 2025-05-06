@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getAllPosts, getAllCategories } from './wordpress-utils';
-import Footer from '../components/Footer';
+import Footer from '../Footer';
 
 export default function BlogPage() {
   const [posts, setPosts] = useState([]);

@@ -209,9 +209,9 @@ export default function RootLayout({
                 }
               ],
               "sameAs": [
-                "https://facebook.com/nidodecuidados",
-                "https://instagram.com/nidodecuidados",
-                "https://linkedin.com/company/nidodecuidados"
+                "https://www.facebook.com/share/1FqUG9E1RW/",
+                "https://www.instagram.com/nido_de_cuidados?igsh=YndjenJ0cHMwMDBj",
+                
               ],
               "priceRange": "$$"
             })
